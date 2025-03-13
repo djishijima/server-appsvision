@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
+import DomainSettings from "@/components/DomainSettings";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -37,6 +38,7 @@ const Index = () => {
         <Features />
         <Pricing />
         <Testimonials />
+        <DomainSettings />
         <FAQ />
         <CTA />
       </main>
