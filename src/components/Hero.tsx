@@ -25,8 +25,9 @@ const Hero = () => {
             <span className="block">
               早くて、安くて、安心な
             </span>
-            <span className="text-primary inline-block animate-fade-in animate-delay-100">
-              プレミアムサーバー
+            <span className="relative inline-block animate-fade-in animate-delay-100">
+              <span className="text-primary relative z-10">プレミアムサーバー</span>
+              <span className="absolute bottom-0 left-0 w-full h-3 bg-primary/20 rounded-full -z-10 transform translate-y-1"></span>
             </span>
           </h1>
           
@@ -35,36 +36,36 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-300">
-            <Button size="lg" className="rounded-md px-8 py-6 text-lg group" asChild>
+            <Button size="lg" className="rounded-md px-8 py-6 text-lg group shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all" asChild>
               <Link to="/signup">
                 無料トライアル開始
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-md px-8 py-6 text-lg" asChild>
+            <Button size="lg" variant="outline" className="rounded-md px-8 py-6 text-lg border-2 hover:bg-primary/5 transition-colors" asChild>
               <Link to="/pricing">料金プランを見る</Link>
             </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto animate-fade-in animate-delay-400">
-            <div className="flex flex-col items-center text-center space-y-2">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+            <div className="flex flex-col items-center text-center space-y-2 p-4 rounded-xl transition-all hover:bg-primary/5 hover:scale-105">
+              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 shadow-md shadow-primary/10">
                 <Zap size={24} />
               </div>
               <h3 className="text-lg font-medium">超高速</h3>
               <p className="text-sm text-muted-foreground">最新SSDとKUSANAGI技術で高速表示</p>
             </div>
             
-            <div className="flex flex-col items-center text-center space-y-2">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+            <div className="flex flex-col items-center text-center space-y-2 p-4 rounded-xl transition-all hover:bg-primary/5 hover:scale-105">
+              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 shadow-md shadow-primary/10">
                 <Server size={24} />
               </div>
               <h3 className="text-lg font-medium">リーズナブル</h3>
               <p className="text-sm text-muted-foreground">初期費用無料、コスパの高い料金プラン</p>
             </div>
             
-            <div className="flex flex-col items-center text-center space-y-2">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
+            <div className="flex flex-col items-center text-center space-y-2 p-4 rounded-xl transition-all hover:bg-primary/5 hover:scale-105">
+              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 shadow-md shadow-primary/10">
                 <Shield size={24} />
               </div>
               <h3 className="text-lg font-medium">安心セキュリティ</h3>
